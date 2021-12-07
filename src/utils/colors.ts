@@ -12,6 +12,7 @@ const colors = {
     dark01: '#555555',
 
     light01: '#777',
+    light02: '#F9FAFB',
   },
 };
 
