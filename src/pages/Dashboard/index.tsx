@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Header from '../../components/Header';
 
 import HomeSection from '../../sections/HomeSection';
+import AboutSection from '../../sections/AboutSection';
 
 const Dashboard: React.FC = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Dashboard: React.FC = () => {
       <Header />
 
       <HomeSection />
+      <AboutSection />
     </>
   )
 }

@@ -11,7 +11,7 @@ import * as Styles from './styles';
 
 const HomeSection: React.FC = () => {
   return (
-    <Styles.Container>
+    <Styles.Container id="home">
       <Styles.InformationDiv>
         <Styles.Wave>
           <Styles.Content>
