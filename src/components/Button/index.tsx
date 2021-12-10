@@ -10,13 +10,15 @@ interface IButtonNeonProps {
   text: string;
   to?: string;
   fontSize?: number;
+  dark?: boolean;
 }
 
-const Button: any = styled(Link) <{ fontSize: string }>`
+const Button: any = styled(Link) <{ fontSize: string, dark?: boolean }>`
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  color: ${colors.gray.white};
+  /* color: ${colors.gray.white}; */
+  color: ${({ dark }) => (dark ? colors.gray.black : colors.gray.white)};
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -31,11 +33,11 @@ const Button: any = styled(Link) <{ fontSize: string }>`
   }
 `;
 
-const ButtonNeon: React.FC<IButtonNeonProps> = ({ text, to, fontSize }) => {
+const ButtonNeon: React.FC<IButtonNeonProps> = ({ text, to, fontSize, dark }) => {
   return (
     <>
-      <Styles.Container>
-        <Button to={to} fontSize={fontSize}>
+      <Styles.Container dark={dark}>
+        <Button to={to} fontSize={fontSize} dark={dark}>
           {text}
         </Button>
       </Styles.Container>

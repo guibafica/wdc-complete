@@ -2,14 +2,16 @@ import styled from 'styled-components';
 
 import colors from '../../utils/colors';
 
-export const Container = styled.div`
+export const Container = styled.div<{ dark?: boolean }>`
   display: inline-block;
   background-color: transparent;
   border: 0.15rem solid ${colors.gray.white};
+  border-color: ${({ dark }) => (dark ? colors.primary.main : colors.gray.white)};
   border-radius: 5% 4% 97% 5%/4% 94% 3% 95%;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   transition: all 0.3s ease-in-out;
+  background: ${({ dark }) => (dark ? colors.primary.main : 'transparent')};
 
   &:hover {
     background-color: ${colors.gray.white};
