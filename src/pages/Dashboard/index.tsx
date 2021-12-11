@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import HomeSection from '../../sections/HomeSection';
 import AboutSection from '../../sections/AboutSection';
 import ServicesSection from '../../sections/ServicesSection';
+import ProjectsSection from '../../sections/ProjectsSection';
 
 const Dashboard: React.FC = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Dashboard: React.FC = () => {
       <HomeSection />
       <AboutSection />
       <ServicesSection />
+      <ProjectsSection />
     </>
   )
 }

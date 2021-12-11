@@ -10,7 +10,7 @@ import * as Styles from './styles';
 
 const ServicesSection: React.FC = () => {
   return (
-    <Styles.Container id="about">
+    <Styles.Container id="services">
       <Styles.TitleH1>
         Nossos
         <Styles.TitleSpan>Serviços</Styles.TitleSpan>

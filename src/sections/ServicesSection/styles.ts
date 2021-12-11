@@ -5,7 +5,7 @@ import colors from '../../utils/colors';
 export const Container = styled.div`
   background: ${colors.gray.light02};
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
